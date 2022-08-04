@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/readstyle.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <%- include('partial/nav');-%>
+      <div class="body">
+        <div class="left-content">
+          <h1 class='blog-title'><%= blog[0].title %></h1>
+          <p class='blog-text'><%= blog[0].text %></p>
+          <h3 class="author"><%= blog[0].author %></h3>
+        </div>
+        <div class="right-content">
+          <a class="del-btn" data-doc="<%= blog[0]._id %>"><button type="submit" name="button"  class="delete"><strong>Delete entry</strong></button></a>
+        </div>
+      </div>
+    <%- include('partial/footer');-%>
+    <script type="text/javascript">
+      const del = document.querySelector('a.del-btn');
+
+      del.addEventListener('click', (end) =>{
+
+        var endpoint = `/read/${del.dataset.doc}`;
+        fetch(endpoint, {
+          method: 'DELETE'
+        })
+        .then(response => response.json())
+        .then((data)=> window.location.href = data.redirect)
+        .catch(err => console.log('There was an error'));
+      })
+    </script>
+  </body>
+</html>

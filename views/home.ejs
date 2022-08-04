@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/homestyle.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <%- include('partial/nav');-%>
+  <div class="blog-posts">
+    <h1>All Blogs</h1>
+    <div class="blog-list">
+      <div class="left">
+        <% if(blog.length == 0){ %>
+          <h1>You haven't made any blog posts yet, go to the creat tab and create some!</h1>
+        <% }
+        else{ %>
+          <% for(i=0;i<blog.length;i++){ %>
+          <a href="/read/:<%= blog[i]._id %>"><button type="button" name="">
+              <div class="button-text">
+                <h4><strong><%= blog[i].title %></strong></h4>
+                <h5><%= blog[i].author %></h5>
+              </div>
+            </button></a>
+          <% }; %>
+        <% } %>
+        <div class="right">
+        </div>
+      </div>
+    </div>
+    <%- include('partial/footer');-%>
+</body>
+
+</html>

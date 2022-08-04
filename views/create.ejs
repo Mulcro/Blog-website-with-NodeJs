@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Blog</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/createstyle.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Ubuntu:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <%- include('partial/nav');-%>
+    <div class="create-section">
+      <h1 class="title">Create A Blog</h1>
+      <form class="create-blog" method="post">
+        <label for="">Blog Title</label>
+        <input type="text" name="blogTitle" value="" class="blog-title">
+        <label for="">Blog Author</label>
+        <input type="text" name="blogAuthor" value="" class="blog-author">
+        <label for="">Blog Content</label>
+        <input type="text" name="blogText" value="" class="blog-content">
+        <button type="submit" name="publish-blog">Publish</button>
+    </form>
+    </div>
+    <%- include('partial/footer');-%>
+
+  </body>
+</html>

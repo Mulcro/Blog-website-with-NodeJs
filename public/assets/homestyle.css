@@ -1,0 +1,135 @@
+body{
+  background-color: #fff;
+}
+.nav-title{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Fascinate;
+  font-size: 4rem;
+}
+.nav-content{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-text{
+  font-family: Ubuntu sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 1rem;
+}
+.nav-list{
+  font-family: sans-serif;
+  padding: 0;
+  color: #fff;
+  margin-right: 10px;
+  right: 0;
+}
+.nav-items{
+  display: inline;
+  padding: 0px 15px 5px 15px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+hr{
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #fff;
+
+}
+
+/*blog list*/
+.blog-posts{
+  margin: 30px 10px 0 10px;
+  font-family: Montserrat;
+}
+.blog-list{
+  text-align: left;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.blog-item{
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  color: black;
+  height: 70px;
+  border-style: solid;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  margin-left: 50px;
+}
+.left{
+  width: 50%;
+}
+button{
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  color: black;
+  height: 70px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  margin-left: 50px;
+}
+button h4{
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+button h5{
+  margin-left: 10px;
+  margin-top: 10px;
+  color: black;
+}
+button:hover{
+  background-color: white;
+}
+a {
+  text-decoration: none;
+}
+/* a{
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  color: black;
+  height: 70px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  margin-left: 50px;
+  background: #fff;
+}
+a h4{
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+a h5{
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+a:hover{
+  background-color: white;
+} */
+.footer-text{
+  text-align: center;
+  color: #fff;
+  font-family: Ubuntu sans-serif;
+
+}
+body {
+
+
+  background: linear-gradient(-90deg, blue, turquoise);
+  background-size: 400% 400%;
+}

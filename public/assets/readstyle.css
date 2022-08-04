@@ -1,0 +1,97 @@
+body{
+  background-color: #fff;
+}
+.nav-title{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Fascinate;
+  font-size: 4rem;
+}
+.nav-content{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-text{
+  font-family: Ubuntu sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 1rem;
+}
+.nav-list{
+  font-family: sans-serif;
+  padding: 0;
+  color: #fff;
+  margin-right: 10px;
+  right: 0;
+}
+.nav-items{
+  display: inline;
+  padding: 0px 15px 5px 15px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+hr{
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #fff;
+
+}
+
+/*Blog content*/
+
+/*left*/
+.body{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-family: Ubuntu;
+}
+.left-content{
+  width: 90%;
+}
+.blog-text{
+  color: #fff;
+  margin: 15px 0 10px 20px;
+  text-align: justify;
+  line-height: 1.5;
+}
+.author{
+  color: #fff;
+}
+/*right*/
+.delete{
+  margin: 25px 0 0 20px;
+  color: red;
+  height: 35px;
+  font-size: 0.8rem;
+}
+
+.footer-text{
+  text-align: center;
+  color: #fff;
+  font-family: Ubuntu sans-serif;
+
+}
+body {
+
+
+  background: linear-gradient(-90deg, blue, turquoise);
+  background-size: 400% 400%;
+
+}
+
+/* 
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+} */
