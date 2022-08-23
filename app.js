@@ -16,4 +16,4 @@ blogController(app);
 
 //set up port
 app.listen(3000);
-console.log('Green light ready');
+console.log('Bluee light ready');
